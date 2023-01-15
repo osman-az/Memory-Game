@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/estilos.css">
+    <script type="text/javascript" src="./JQ/jquery-3.6.1.min.js"></script>
+    <title>Memory - Game</title>
+</head>
+<body>
+    <header>
+        <h1>USAF - MEMORY GAME</h1>
+    </header>
+    <main>
+        <div id="seleccion">
+            <h3>HITS: </h3>
+            <h3 id="nroAciertos"></h3>
+            <h2 id="victoria"></h2>
+            <button id="iniciar-reiniciar">START GAME</button>
+            <div>
+                <h4 id="indicadorAcierto"></h4>
+            </div>
+        </div>
+        <div id="tablaCartas">
+            <table id="imgRef">
+                <!-- Aviones -->
+                <tr>
+                    <td><img id="carta-0" class="imgCarta"></td>
+                    <td><img id="carta-1" class="imgCarta"></td>
+                    <td><img id="carta-2" class="imgCarta"></td>
+                    <td><img id="carta-3" class="imgCarta"></td>
+                </tr>
+                <tr>
+                    <td><img id="carta-4" class="imgCarta"></td>
+                    <td><img id="carta-5" class="imgCarta"></td>
+                    <td><img id="carta-6" class="imgCarta"></td>
+                    <td><img id="carta-7" class="imgCarta"></td>
+                </tr>
+                <tr>
+                    <td><img id="carta-8" class="imgCarta"></td>
+                    <td><img id="carta-9" class="imgCarta"></td>
+                    <td><img id="carta-10" class="imgCarta"></td>
+                    <td><img id="carta-11" class="imgCarta"></td>
+                </tr>
+                <tr>
+                    <td><img id="carta-12" class="imgCarta"></td>
+                    <td><img id="carta-13" class="imgCarta"></td>
+                    <td><img id="carta-14" class="imgCarta"></td>
+                    <td><img id="carta-15" class="imgCarta"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="estadisticas">
+            <div id="tiempos">
+                <h4>START TIME</h4>
+                <h5></h5>
+                <h4>ENDING TIME</h4>
+                <h5></h5>
+                <h4>MATCH TIME</h4>
+                <h5></h5>
+            </div>
+            <div id="records">
+                <h4>RECORDS</h4>
+                <div>
+                    <ol id="listaHistorial">
+                        
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Osmán Azuaje</p>
+        <img src="./IMG/OSF1-L1.gif" alt="Osmán Logo">
+    </footer>
+    <script src="./JS/funciones.js"></script>
+
+    <!-- Librería para Cookies vista en clase (https://github.com/js-cookie/js-cookie). -->
+    <script src="./JS/js.cookie.min.js"></script>
+</body>
+</html>

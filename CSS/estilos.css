@@ -1,0 +1,288 @@
+/* IMPORTACIONES */
+@import url('https://fonts.googleapis.com/css2?family=Play&family=Teko:wght@400;700&display=swap');
+
+/* GENERALES */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Teko', sans-serif;
+}
+
+/* HEADER */
+header {
+    background-color: #80808E;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header>h1 {
+    color: #034d96;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+    font-size: 3em;
+    text-align: center;
+}
+
+/* MAIN */
+main {
+    background-color: #919294;
+    box-shadow: 0px 0px 20px 3px rgba(255, 255, 255, 0.75) inset;
+    height: 85vh;
+    display: grid;
+    grid-template-columns: 0.05fr 0.6fr 1fr 0.5fr 0.05fr;
+    grid-template-rows: 0.05fr 1fr 0.05fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+}
+
+#seleccion {
+    grid-area: 2 / 2 / 3 / 3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.61fr 0.7fr 0.6fr repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 8px;
+}
+
+#seleccion>h3:nth-child(1) {
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+    color: #034d96;
+    grid-area: 1 / 1 / 2 / 3;
+    text-align: right;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#seleccion>h3:nth-child(2) {
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+    color: #034d96;
+    grid-area: 1 / 3 / 2 / 5;
+    text-align: start;
+    font-size: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#seleccion>h2{
+    grid-area: 2 / 2 / 3 / 4;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+    color: #FFD700;
+    text-align: center;
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Boton de reinicio */
+#seleccion>button {
+    grid-area: 3 / 2 / 4 / 4;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #034d96;
+    padding: 10px 30px;
+    border: solid #034d96 2px;
+    box-shadow: 0px 0px 8px 1px rgba(255, 255, 255, 0.75);
+    border-radius: 3px;
+    transition: 1000ms;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#seleccion>button:hover {
+    transition: 1000ms;
+    background-color: #919294;
+    color: #d62828;
+    border: solid 2px #d62828;
+    box-shadow: 0px 0px 8px 1px rgba(255, 0, 0, 0.75);
+}
+
+#seleccion>div{
+    grid-area: 4 / 1 / 6 / 5;
+    background: url(../IMG/USAF\ -\ Logo.png) center center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+#seleccion>div>H4 {
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+    color: #034d96;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 7%;
+}
+
+/* Tabla */
+#imgRef {
+    grid-area: 4 / 1 / 5 / 4;
+}
+
+/* Carta reducida en la Imagen */
+.imgCarta {
+    border: 6px solid rgba(255, 255, 255, 0.75);
+    border-radius: 3px;
+    /* width: 90%; */
+    display: none;
+    width: 100px; /* PROVICIONAL */
+    height: 100px; /* PROVICIONAL */
+    font-size: 3em;
+    font-weight: bold;
+}
+
+/* Categoria seleccionada */
+.imgRef-seleccionada {
+    border: 6px solid #bce954;
+}
+
+#tablaCartas {
+    grid-area: 2 / 3 / 3 / 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#estadisticas {
+    grid-area: 2 / 4 / 3 / 5;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.6fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 13px;
+}
+
+#tiempos {
+    grid-area: 1 / 1 / 2 / 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 0.7fr 1fr 0.7fr 1fr 0.7fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 8px;
+}
+
+#tiempos>h4:nth-child(1){
+    grid-area: 1 / 1 / 2 / 3;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+    color: #034d96;
+    text-align: center;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+#tiempos>h5:nth-child(2){
+    grid-area: 2 / 1 / 3 / 3;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+    color: #BCE954;
+    text-align: center;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+#tiempos>h4:nth-child(3){
+    grid-area: 3 / 1 / 4 / 3;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+    color: #034d96;
+    text-align: center;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+#tiempos>h5:nth-child(4){
+    grid-area: 4 / 1 / 5 / 3;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+    color: yellow;
+    text-align: center;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+#tiempos>h4:nth-child(5){
+    grid-area: 5 / 1 / 6 / 3;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+    color: #034d96;
+    text-align: center;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+#tiempos>h5:nth-child(6){
+    grid-area: 6 / 1 / 7 / 3;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+    color: red;
+    text-align: center;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+#records {
+    box-shadow: 0px 0px 49px 13px rgba(188, 233, 84, 0.81) inset;
+    grid-area: 2 / 1 / 3 / 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.05fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 4px;
+    justify-content: center;
+    align-items: center;
+}
+
+#records>h4 {
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: #BCE954;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#records>div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#listaHistorial {
+    grid-area: 2 / 1 / 3 / 2;
+    height: 92%;
+    color: #BCE954;
+    font-size: 1.5em;
+}
+
+/* FOOTER */
+footer {
+    background-color: #001016;
+    height: 9vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer>img {
+    width: 4%;
+}
+
+footer>p {
+    color: white;
+    font-size: 1.5em;
+}

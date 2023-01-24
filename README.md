@@ -22,4 +22,4 @@ To simulate the famous card game called *MEMORY*, making use of the **DOM** modi
 | ------------- | ------------- | ------------- |
 
 | ![jQuery](https://i.imgur.com/EUYnMSA.png "jQuery") jQuery
-| ------------- | ------------- |
+| ------------- |

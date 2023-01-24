@@ -15,3 +15,11 @@ To simulate the famous card game called *MEMORY*, making use of the **DOM** modi
 4. When the user gets all the pairs, he must show a message with the text *"You won"* and stop the timer. You must look in the **local storage** if there is any stored time, if there is a stored time, you must compare that stored time with the current game time. If the current game time is less than the stored time, a message is displayed to the user informing that the record has been broken and the stored time value must be updated with the current time value, otherwise the record is kept.
 
 5. Any time the user clicks the *"Restart Game"* button, all cards must be flipped over, the game time and cards found counter must be reset, as well as the *"Start Game"* text placed back on the button.
+
+### Technologies:
+                    
+| ![Javascript](https://i.imgur.com/VLepSKY.png "Javascript") Javascript | ![HTML 5](https://i.imgur.com/QmbHEsR.png "HTML 5") HTML 5 | ![CSS 3](https://i.imgur.com/O6lJ8iB.png "CSS 3") CSS 3
+| ------------- | ------------- | ------------- |
+
+| ![jQuery](https://i.imgur.com/EUYnMSA.png "jQuery") jQuery
+| ------------- | ------------- |
